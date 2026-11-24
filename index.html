@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velora | Private Journeys. Extraordinary Europe.</title>
+  <meta name="description" content="Discover Europe, beyond the ordinary. Thoughtfully curated private journeys, luxury stays, and slow travel across Italy, Switzerland, France, and Norway.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header (Figma Design) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Velora Home">velora</a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="pages/destinations.html" class="nav-link ">Destinations</a>
+        <a href="pages/experiences.html" class="nav-link ">Experiences</a>
+        <a href="pages/luxury-stays.html" class="nav-link ">Luxury stays</a>
+        <a href="pages/tour-packages.html" class="nav-link ">Journeys</a>
+        <a href="pages/travel-journal.html" class="nav-link ">Journal</a>
+        <a href="pages/about.html" class="nav-link ">About</a>
+      </nav>
+
+      <!-- Header Utilities -->
+      <div class="header-actions">
+        <a href="pages/my-account.html" class="header-util-link">Account</a>
+        <a href="pages/search-results.html" class="header-util-link">Search</a>
+
+        <!-- Currency Selector Dropdown -->
+        <div class="currency-selector">
+          <button type="button" class="currency-btn" aria-expanded="false" aria-haspopup="true" aria-label="Select currency">
+            <span class="current-currency-code">EN / GBP</span>
+            <span style="font-size: 0.65rem; margin-left: 2px;">&#9662;</span>
+          </button>
+          <div class="currency-dropdown" role="menu">
+            <button type="button" class="currency-option selected" data-currency="GBP" role="menuitem">EN / GBP (£)</button>
+            <button type="button" class="currency-option" data-currency="USD" role="menuitem">EN / USD ($)</button>
+            <button type="button" class="currency-option" data-currency="EUR" role="menuitem">EN / EUR (€)</button>
+            <button type="button" class="currency-option" data-currency="CHF" role="menuitem">EN / CHF</button>
+          </div>
+        </div>
+
+        <a href="pages/travel-planner.html" class="btn-navy-header">Plan your journey &#x2197;</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="hamburger-btn" aria-label="Open mobile navigation" aria-expanded="false" aria-controls="mobile-drawer">
+          <img src="assets/icons/menu.svg" width="22" height="22" alt="" aria-hidden="true">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation" role="dialog" aria-modal="true">
+    <div class="drawer-header">
+      <span class="brand-logo">velora</span>
+      <button type="button" class="drawer-close-btn modal-close-btn" aria-label="Close navigation">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="pages/destinations.html" class="drawer-link">Destinations</a>
+      <a href="pages/experiences.html" class="drawer-link">Experiences</a>
+      <a href="pages/luxury-stays.html" class="drawer-link">Luxury stays</a>
+      <a href="pages/tour-packages.html" class="drawer-link">Journeys</a>
+      <a href="pages/travel-journal.html" class="drawer-link">Journal</a>
+      <a href="pages/about.html" class="drawer-link">About</a>
+      <a href="pages/travel-planner.html" class="drawer-link">Plan your journey &#x2197;</a>
+      <a href="pages/my-account.html" class="drawer-link">Account</a>
+      <a href="pages/my-bookings.html" class="drawer-link">My bookings</a>
+      <a href="pages/contact.html" class="drawer-link">Contact</a>
+    </nav>
+  </aside>
+
+
+  <main id="main-content">
+    <!-- Hero Section (Figma Design Exact) -->
+    <section class="hero-editorial" aria-labelledby="hero-heading">
+      <div class="container">
+        <div style="max-width: 760px;">
+          <span class="eyebrow" style="color: #FFFFFF; opacity: 0.95; letter-spacing: 0.16em; font-weight: 500; font-size: 0.75rem; margin-bottom: 16px;">PRIVATE JOURNEYS. EXTRAORDINARY EUROPE.</span>
+          <h1 id="hero-heading" class="display-1" style="color: #FFFFFF; font-weight: 400; line-height: 1.15; margin-bottom: 20px;">Discover Europe,<br>Beyond the Ordinary.</h1>
+          <p class="lead-text" style="color: #FFFFFF; opacity: 0.95; margin-bottom: 32px; font-size: 1.125rem; line-height: 1.6;">
+            A world of ancient wonders, wild beauty and quiet indulgence.<br>Thoughtfully curated. Entirely yours.
+          </p>
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="pages/destinations.html" class="btn btn-outline-white" style="border-radius: 4px; border-color: rgba(255,255,255,0.85); padding: 12px 24px;">Explore destinations &#x2197;</a>
+            <a href="pages/travel-planner.html" class="btn" style="background: #FFFFFF; color: #142C40; border: 1px solid #FFFFFF; border-radius: 4px; padding: 12px 24px; font-weight: 500;">Plan your journey &#x2197;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Bottom Left Indicator -->
+      <div style="position: absolute; bottom: 36px; left: var(--container-padding); color: #FFFFFF; font-size: 0.75rem; letter-spacing: 0.12em; line-height: 1.6; z-index: 5;">
+        <span style="font-weight: 600;">01 / 04 &nbsp;&nbsp;&nbsp;&nbsp; ROME</span><br>
+        <span style="color: rgba(255,255,255,0.75);">THE ETERNAL CITY</span>
+      </div>
+    </section>
+
+    <!-- Search Pill Bar -->
+    <div class="container">
+      <div class="hero-search-pill-box">
+        <div class="search-pill-item">
+          <span class="search-pill-label">WHERE TO?</span>
+          <button type="button" class="search-pill-value">Anywhere in Europe <span style="font-size:0.7rem;">&#9662;</span></button>
+        </div>
+        <div class="search-pill-item" style="border-left: 1px solid #E5DFD5; padding-left: 16px;">
+          <span class="search-pill-label">WHEN</span>
+          <button type="button" class="search-pill-value">Choose your dates <span style="font-size:0.7rem;">&#9662;</span></button>
+        </div>
+        <div class="search-pill-item" style="border-left: 1px solid #E5DFD5; padding-left: 16px;">
+          <span class="search-pill-label">TRAVELLERS</span>
+          <button type="button" class="search-pill-value">2 adults <span style="font-size:0.7rem;">&#9662;</span></button>
+        </div>
+        <a href="pages/search-results.html" class="search-pill-btn">Find my escape &#x2197;</a>
+      </div>
+    </div>
+
+    <!-- Service Promise Strip -->
+    <section class="service-promise-strip">
+      <div class="container">
+        <div class="service-promise-grid">
+          <div class="service-promise-item">Made for you, not the masses</div>
+          <div class="service-promise-item">Local knowledge. Personal care.</div>
+          <div class="service-promise-item">Seamless from arrival to farewell</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Europe, Uncovered -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">EUROPE, UNCOVERED</span>
+          <h2 class="heading-1">Some places stay with you.</h2>
+          <p class="text-muted" style="margin-top: 8px;">From alpine valleys to sunlit shores, the places we return to time and again.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Card 1: Swiss Alps -->
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/matterhorn-zermatt.jpg" alt="Swiss Alps Matterhorn" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">SWITZERLAND</span>
+              <h3 class="card-title">Swiss Alps &amp; scenic rail</h3>
+              <p class="card-desc">Ancient peaks, iconic rail and alpine hideaways. 2–3 nights</p>
+              <a href="pages/destination-details.html" class="arrow-link" style="margin-top: 16px;">Discover more &#x2197;</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Paris -->
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/paris-hero.jpg" alt="Paris and the Seine" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">FRANCE</span>
+              <h3 class="card-title">Paris &amp; the Seine</h3>
+              <p class="card-desc">Grand boulevards, quiet bistros and timeless culture. 2–3 nights</p>
+              <a href="pages/destinations.html" class="arrow-link" style="margin-top: 16px;">Discover more &#x2197;</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Norwegian fjords -->
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/norway-fjords.jpg" alt="Norwegian fjords" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">NORWAY</span>
+              <h3 class="card-title">Norwegian fjords</h3>
+              <p class="card-desc">Serene waters, mountain cabins and northern air. 2–3 nights</p>
+              <a href="pages/destinations.html" class="arrow-link" style="margin-top: 16px;">Discover more &#x2197;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Closer to the Extraordinary (Editorial Split) -->
+    <section class="section" style="background-color: #FAF8F5;">
+      <div class="container">
+        <div class="editorial-split">
+          <div>
+            <img src="assets/images/tuscan-vineyards.jpg" alt="Tuscan vineyards landscape" class="editorial-img" loading="lazy">
+          </div>
+          <div>
+            <span class="eyebrow">CLOSER TO THE EXTRAORDINARY</span>
+            <h2 class="heading-1" style="margin-bottom: 16px;">Not just a place.<br>A different perspective.</h2>
+            <p style="color: #5E6A75; line-height: 1.7; margin-bottom: 24px;">
+              We believe travel should feel personal, seamless and genuinely transformative. From private vineyard tastings to sunset fjord cruises, every detail is considered.
+            </p>
+            <div class="numbered-list">
+              <div class="numbered-item">
+                <span class="num-badge">01</span>
+                <span>Culture &amp; heritage</span>
+              </div>
+              <div class="numbered-item">
+                <span class="num-badge">02</span>
+                <span>Fjords &amp; nature</span>
+              </div>
+              <div class="numbered-item">
+                <span class="num-badge">03</span>
+                <span>Wellness</span>
+              </div>
+              <div class="numbered-item">
+                <span class="num-badge">04</span>
+                <span>Food &amp; local traditions</span>
+              </div>
+            </div>
+            <a href="pages/experiences.html" class="btn btn-navy-header" style="padding: 12px 24px; font-size: 0.875rem;">Explore experiences &#x2197;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Beautiful Places to Pause -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">BEAUTIFUL PLACES TO PAUSE</span>
+          <h2 class="heading-1">Stay somewhere remarkable.</h2>
+          <p class="text-muted" style="margin-top: 8px;">Handpicked escapes, chosen for atmosphere, privacy and character.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- Card 1: Amalfi Coast Retreat -->
+          <article class="card">
+            <div class="card-img-wrapper" style="padding-top: 60%;">
+              <img src="assets/images/villa-cimbrone-bust.jpg" alt="Amalfi Coast Retreat" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">AMALFI COAST, ITALY</span>
+              <h3 class="card-title">Amalfi Coast Retreat</h3>
+              <p class="card-desc">Cliffside serenity with sea views.</p>
+              <p style="font-size: 0.875rem; color: #707A84; margin-top: 8px;">From GBP 850 / person / night</p>
+              <a href="pages/luxury-stays.html" class="arrow-link" style="margin-top: 16px;">Explore our stays &#x2197;</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Alpine Hideaway -->
+          <article class="card">
+            <div class="card-img-wrapper" style="padding-top: 60%;">
+              <img src="assets/images/matterhorn-zermatt.jpg" alt="Alpine Hideaway Zermatt" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">ZERMATT, SWITZERLAND</span>
+              <h3 class="card-title">Alpine Hideaway</h3>
+              <p class="card-desc">Mountain views and alpine calm.</p>
+              <p style="font-size: 0.875rem; color: #707A84; margin-top: 8px;">From CHF 540 / person / night</p>
+              <a href="pages/hotel-details.html" class="arrow-link" style="margin-top: 16px;">Explore our stays &#x2197;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: The Velora Difference -->
+    <section class="section" style="background-color: #F4F0E8;">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">THE VELORA DIFFERENCE</span>
+          <h2 class="heading-1">Luxury is feeling understood.</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <div style="border-top: 1px solid #D8CFC0; padding-top: 24px;">
+            <span style="font-size: 0.8125rem; font-weight: 600; color: #707A84; display: block; margin-bottom: 8px;">01</span>
+            <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; margin-bottom: 12px; color: #202A33;">Entirely personal</h3>
+            <p style="font-size: 0.875rem; color: #5E6A75; line-height: 1.7;">Everything is designed around you: your pace, your interests, and your style.</p>
+          </div>
+          <div style="border-top: 1px solid #D8CFC0; padding-top: 24px;">
+            <span style="font-size: 0.8125rem; font-weight: 600; color: #707A84; display: block; margin-bottom: 8px;">02</span>
+            <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; margin-bottom: 12px; color: #202A33;">Deeply connected</h3>
+            <p style="font-size: 0.875rem; color: #5E6A75; line-height: 1.7;">We work with local guides, independent stays and quiet corners of Europe.</p>
+          </div>
+          <div style="border-top: 1px solid #D8CFC0; padding-top: 24px;">
+            <span style="font-size: 0.8125rem; font-weight: 600; color: #707A84; display: block; margin-bottom: 8px;">03</span>
+            <h3 style="font-family: var(--font-editorial); font-size: 1.25rem; margin-bottom: 12px; color: #202A33;">Beautifully effortless</h3>
+            <p style="font-size: 0.875rem; color: #5E6A75; line-height: 1.7;">From first conversation to your return journey, every detail is quietly looked after.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: The Signature Journeys -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">THE SIGNATURE JOURNEYS</span>
+          <h2 class="heading-1">Journeys worth taking slowly.</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Journey 1 -->
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/rome-colosseum.jpg" alt="The European Grand Tour" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">ILLUSTRATIVE ITINERARY</span>
+              <h3 class="card-title">The European Grand Tour</h3>
+              <p class="card-desc">10 days &middot; Tailored journey</p>
+              <p style="font-size: 0.875rem; color: #707A84; margin-top: 4px;">From GBP 4,850 / person</p>
+              <a href="pages/tour-package-details.html" class="arrow-link" style="margin-top: 16px;">View journey &#x2197;</a>
+            </div>
+          </article>
+
+          <!-- Journey 2 -->
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/amalfi-coast-village.jpg" alt="The Amalfi Coast" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">ILLUSTRATIVE ITINERARY</span>
+              <h3 class="card-title">The Amalfi Coast</h3>
+              <p class="card-desc">8 days &middot; Tailored journey</p>
+              <p style="font-size: 0.875rem; color: #707A84; margin-top: 4px;">From GBP 3,950 / person</p>
+              <a href="pages/tour-packages.html" class="arrow-link" style="margin-top: 16px;">View journey &#x2197;</a>
+            </div>
+          </article>
+
+          <!-- Journey 3 -->
+          <article class="card">
+            <div class="card-img-wrapper">
+              <img src="assets/images/norway-fjords.jpg" alt="Nordic Nature & Fjords" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">ILLUSTRATIVE ITINERARY</span>
+              <h3 class="card-title">Nordic Nature &amp; Fjords</h3>
+              <p class="card-desc">12 days &middot; Tailored journey</p>
+              <p style="font-size: 0.875rem; color: #707A84; margin-top: 4px;">From GBP 5,200 / person</p>
+              <a href="pages/tour-packages.html" class="arrow-link" style="margin-top: 16px;">View journey &#x2197;</a>
+            </div>
+          </article>
+        </div>
+
+        <p style="font-size: 0.75rem; color: #8C96A0; margin-top: 24px; text-align: left;">
+          Prices are for 2026/2027 departures. All itineraries can be adjusted to your preferred dates and duration.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 6: From the Journal -->
+    <section class="section" style="background-color: #F4F0E8;">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">FROM THE JOURNAL</span>
+          <h2 class="heading-1">A little inspiration for the journey.</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- Article 1 -->
+          <article class="card">
+            <div class="card-img-wrapper" style="padding-top: 60%;">
+              <img src="assets/images/matterhorn-zermatt.jpg" alt="Scenic alpine route" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">STORIES &amp; TRAVEL TIPS</span>
+              <h3 class="card-title">The art of taking the scenic route</h3>
+              <p class="card-desc">A guide to slow rail, mountain passes and unhurried journeys.</p>
+              <a href="pages/journal-article.html" class="arrow-link" style="margin-top: 16px;">Read more &#x2197;</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="card">
+            <div class="card-img-wrapper" style="padding-top: 60%;">
+              <img src="assets/images/tuscan-cooking.jpg" alt="Italian food traditions" class="card-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-eyebrow">FOOD &amp; LOCAL TRADITIONS</span>
+              <h3 class="card-title">A taste of somewhere new</h3>
+              <p class="card-desc">Six food traditions worth travelling for across Italy and France.</p>
+              <a href="pages/travel-journal.html" class="arrow-link" style="margin-top: 16px;">Read more &#x2197;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Start a Conversation -->
+    <section class="section" style="text-align: center; padding: 96px 0;">
+      <div class="container" style="max-width: 720px;">
+        <span class="eyebrow">START A CONVERSATION</span>
+        <h2 class="display-2" style="margin: 16px 0 20px;">Less following the crowd.<br>More following your curiosity.</h2>
+        <p style="color: #5E6A75; font-size: 1.05rem; line-height: 1.7; margin-bottom: 32px;">
+          Tell us what you love, and we'll craft an itinerary that fits you.
+        </p>
+        <a href="pages/travel-planner.html" class="btn btn-navy-header" style="padding: 14px 32px; font-size: 0.9375rem;">Start planning your journey &#x2197;</a>
+      </div>
+    </section>
+
+    <!-- Section 8: Newsletter Strip -->
+    <section class="newsletter-strip">
+      <div class="container">
+        <div class="newsletter-strip-grid">
+          <div>
+            <h3 class="newsletter-strip-title">Good things come to the curious.</h3>
+            <p class="newsletter-strip-desc">Quiet recommendations, private invitations and stories from our travels.</p>
+          </div>
+          <div>
+            <span style="font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em; color: #707A84; text-transform: uppercase; display: block; margin-bottom: 8px;">EMAIL ADDRESS</span>
+            <form class="newsletter-strip-form" onsubmit="event.preventDefault(); window.Velora.toast('Thank you for subscribing to Velora.');">
+              <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+              <button type="submit">Subscribe &#x2197;</button>
+            </form>
+            <span style="font-size: 0.75rem; color: #8C96A0; margin-top: 8px; display: block;">We respect your privacy. Unsubscribe at any time.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer (Figma Light Limestone Design) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">velora</a>
+          <p class="footer-tagline">Europe, thoughtfully discovered.</p>
+          <div class="footer-meta-left">
+            <p>United Kingdom &middot; United States &middot; GBP &middot; USD</p>
+            <p>&copy; 2026 Velora. <a href="pages/privacy-policy.html">Privacy policy</a> &middot; <a href="pages/terms-conditions.html">Terms &amp; conditions</a></p>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <span class="footer-col-title">EXPLORE</span>
+          <div class="footer-links-rows">
+            <p>
+              <a href="pages/destinations.html">Destinations</a> &middot; 
+              <a href="pages/experiences.html">Experiences</a> &middot; 
+              <a href="pages/luxury-stays.html">Luxury stays</a>
+            </p>
+            <p>
+              <a href="pages/about.html">About us</a> &middot; 
+              <a href="pages/travel-journal.html">Journal</a> &middot; 
+              <a href="pages/gallery.html">Gallery</a> &middot; 
+              <a href="pages/contact.html">Contact</a>
+            </p>
+            <p>
+              <a href="pages/faqs.html">FAQs</a> &middot; 
+              <a href="pages/my-account.html">My account</a> &middot; 
+              <a href="pages/my-bookings.html">My bookings</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/interactions.js"></script>
+
+</body>
+</html>
